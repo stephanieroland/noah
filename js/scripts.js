@@ -55,48 +55,6 @@ jQuery(document).ready(function($) {
 	});
 
 
-	// Animated Scroll to Top Button
-	//------------------------------------------------------------------------------
-	var $scrollTop = $('.scroll-to-top-btn');
-	if ($scrollTop.length > 0) {
-		$(window).on('scroll', function(){
-	    if ($(window).scrollTop() > 600) {
-	      $scrollTop.addClass('visible');
-	    } else {
-	      $scrollTop.removeClass('visible');
-	    }
-		});
-		$scrollTop.on('click', function(e){
-			e.preventDefault();
-			$('html').velocity("scroll", { offset: 0, duration: 1000, easing:'easeOutExpo', mobileHA: false });
-		});
-	}
-
-
-	// Smooth scroll to element
-	//------------------------------------------------------------------------------
-	// Scroll Spy
-	//$( '.fw-section' ).scrollSpy();
-
-	// Smooth scroll to element
-	$( document ).on( 'click', '.scroll-to', function ( event ) {
-		var target = $( this ).attr( 'href' );
-		if ( '#' === target ) {
-			return false;
-		}
-
-		var $target = $( target );
-		if( $target.length > 0 ) {
-			var $elemOffsetTop = $target.data( 'offset-top' ) || 180;
-			$( 'html' ).velocity( "scroll", {
-				offset: $( this.hash ).offset().top - $elemOffsetTop,
-				duration: 1000,
-				easing: 'easeOutExpo',
-				mobileHA: false
-			} );
-		}
-		event.preventDefault();
-	} );
 
 
 	// Language Dropdown
@@ -124,12 +82,48 @@ jQuery(document).ready(function($) {
 	toolbarToggle.on('click', function(e) {
 		if($(e.target).is('.active')) {
 			closeToolBox();
-		} else {
+	       	
+        } else {
 			closeToolBox();
 			$(this).addClass('active');
+            $('.background').toggle(''); 
 		}
+    
 	});
+    // remove background
+    var background = $('.background');
+	background.on('click', function(e) {
+        closeToolBox();
+         $('.background').toggle(''); 
+    });
+    	
+      
+	// Smooth scroll to element
+	//------------------------------------------------------------------------------
+	// Scroll Spy
+	//$( '.fw-section' ).scrollSpy();
 
+	$( document ).on( 'click', '.scroll-to', function ( event ) {
+		var target = $( this ).attr( 'href' );
+		if ( '#' === target ) {
+			
+            return false;
+		}
+
+		var $target = $( target );
+		if( $target.length > 0 ) {
+             closeToolBox();
+			var $elemOffsetTop = $target.data( 'offset-top' ) || 180;
+			$( 'html' ).velocity( "scroll", {
+				offset: $( this.hash ).offset().top - $elemOffsetTop,
+				duration: 1000,
+				easing: 'easeOutExpo',
+				mobileHA: false
+			} );
+		}
+		event.preventDefault();
+	} );
+ 
 
 	// Waves Effect (on Buttons)
 	//------------------------------------------------------------------------------

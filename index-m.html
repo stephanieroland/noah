@@ -41,21 +41,39 @@ for(h=0;h<k.length;h++)e(d,k[h]);a._i.push([b,c,f])};a.__SV=1.2;b=e.createElemen
 mixpanel.init("4b5b7b90c22132a51a4532731f63f883");</script><!-- end Mixpanel -->
     
     <!-- Facebook Pixel Code -->
+<!-- Facebook Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
 n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
 n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
 document,'script','https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '338119189952556'); // Insert your pixel ID here.
+fbq('init', '471749263181163'); // Insert your pixel ID here.
 fbq('track', 'PageView');
 </script>
 <noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=338119189952556&ev=PageView&noscript=1"
+src="https://www.facebook.com/tr?id=471749263181163&ev=PageView&noscript=1"
 /></noscript>
 <!-- DO NOT MODIFY -->
 <!-- End Facebook Pixel Code -->
-
+    <!-- Fullstory -->
+<script>
+window['_fs_debug'] = false;
+window['_fs_host'] = 'fullstory.com';
+window['_fs_org'] = '5Z00R';
+window['_fs_namespace'] = 'FS';
+(function(m,n,e,t,l,o,g,y){
+    if (e in m && m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].'); return;}
+    g=m[e]=function(a,b){g.q?g.q.push([a,b]):g._api(a,b);};g.q=[];
+    o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
+    y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+    g.identify=function(i,v){g(l,{uid:i});if(v)g(l,v)};g.setUserVars=function(v){g(l,v)};
+    g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+    g.clearUserCookie=function(c,d,i){if(!c || document.cookie.match('fs_uid=[`;`]*`[`;`]*`[`;`]*`')){
+    d=n.domain;while(1){n.cookie='fs_uid=;domain='+d+
+    ';path=/;expires='+new Date(0).toUTCString();i=d.indexOf('.');if(i<0)break;d=d.slice(i+1)}}};
+})(window,document,window['_fs_namespace'],'script','user');
+</script>
     
 </head>
 
@@ -118,6 +136,7 @@ src="https://www.facebook.com/tr?id=338119189952556&ev=PageView&noscript=1"
         </div>
       </div><!-- .lang-switcher -->
 
+<div class="background" >    </div>
       <!-- Toolbar -->
       <div class="toolbar">
         <div class="inner">
@@ -132,7 +151,7 @@ src="https://www.facebook.com/tr?id=338119189952556&ev=PageView&noscript=1"
                     <li><a href="#why" class="scroll-to">Why a disaster kit?</a></li>
                <!-- <li><a href="#video" class="scroll-to">Video Showcase</a></li>
                 <li><a href="#gallery" class="scroll-to">Gallery</a></li> -->
-                
+                 <li>  <a href="ajax/oculus_mobile.html"  class="ajax-load-link app-buy">Get Your Kit</a></li>
                         <li><a href="#contact" class="scroll-to">Contact</a></li>
               </ul>
             </div>
@@ -145,7 +164,7 @@ src="https://www.facebook.com/tr?id=338119189952556&ev=PageView&noscript=1"
   
       
       
-       <section id="gallery" class="fw-section full-heightbis padding-top-3x padding-bottom-3x"  style="background-image: url('img/noah17bis-min.jpg');" data-offset-top="67">
+       <section id="home" class="fw-section full-heightbis padding-top-3x padding-bottom-3x"  style="background-image: url('img/noah17bis-min.jpg');" data-offset-top="67">
            
             <div class="containertransparent padding-top-2x padding-bottom-1x fixedmiddle">
             <span style="color:#fff !important"  class="h1">Be Prepared</span><br>
@@ -183,10 +202,13 @@ src="https://www.facebook.com/tr?id=338119189952556&ev=PageView&noscript=1"
          WHAT IS IT
          
         </h3>
+          <div class="row">
+             <div class="col-md-12 col-sm-12">
  
               <img src="img/noah3-min.jpg" alt="Oculus Touch">
  <p class="space-top text-center">A discrete, easy-to-stow, and stylish box containing a GO bag with its own 72 hour survival kit, and an additional 72 hours of supplies to shelter in place.</p> 
-       
+       </div>
+          </div>
           <div class="text-center">
                  <a href="ajax/oculus_mobile.html" class="btn btn-block btn-primary waves-effect waves-light app-buy ajax-load-link">Get yours     <i class="material-icons arrow_forward"></i></a>
           </div>
@@ -198,7 +220,7 @@ src="https://www.facebook.com/tr?id=338119189952556&ev=PageView&noscript=1"
       <div class="container padding-top-3x padding-bottom-2x">
       
         <div class="row padding-top-1x padding-bottom-1x">
-          <div class="col-md-3 col-sm-12 col-md-offset-1 ">
+          <div class="col-md-6 col-sm-12">
               <h3 class="text-center">
           HOW DOES IT WORK?
           

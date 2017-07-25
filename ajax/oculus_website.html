@@ -18,11 +18,11 @@
           <a class="incr-btn" data-action="increase" href="#">+</a>
         </div>
         <span>&times;</span>
-        <span class="price">$<i>143.00</i></span>
+        <span class="price">$<i>220.00</i></span>
       </div>
 
-    <h4 class="total-cost"><span class="text-thin">Total:</span> $<i>143.00</i></h4> 
-      <input type="hidden" id="total_cost" name="total_cost" value="$143.00">
+    <h4 class="total-cost"><span class="text-thin">Total:</span> $<i>220.00</i></h4> 
+      <input type="hidden" id="total_cost" name="total_cost" value="$220.00">
         
     </div>
   </div>
@@ -141,7 +141,7 @@
              <hr>
                <div class="row">
         <div class="col-xs-4">
-            <img class="imagerounded"  src="img/waterpurifier.jpg">
+            <img class="imagerounded"  src="img/waterpurifierbis.jpg">
         </div>
         <div class="col-xs-8">
             Additional water purifier tablets
@@ -153,19 +153,11 @@
             <img class="imagerounded"  src="img/radio.jpg">
         </div>
         <div class="col-xs-8">
-            Handcrank emergency radio station
+            Handcrank emergency radio station & Phone Charger
         </div>
           </div>
              <hr>
-                     
-               <div class="row">
-        <div class="col-xs-4">
-            <img class="imagerounded"  src="img/charger.png">
-        </div>
-        <div class="col-xs-8">
-            Dynamo phone charger
-        </div>
-          </div>
+    
                 
         </div>
         
@@ -246,6 +238,10 @@ $( document ).ready(function() {
      $("#outofstock").hide();
  $("#order-form").hide();
      $(".total-cost").hide();
+
+fbq('track', 'InitiateCheckout');
+
+
     
     $('#see').click(function(event) {
       
@@ -320,12 +316,6 @@ $( document ).ready(function() {
                 //"$product-dna":$('#dna').is(':checked').toString()
                 });
 
-
-                    fbq('track', 'AddToCart', {
-
-
-                        value: totalcost,
-                        });
 
                // mixpanel.track('order');
                 //	fbq('track', 'AddToCart', {

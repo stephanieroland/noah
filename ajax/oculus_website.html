@@ -2,7 +2,7 @@
 <article class="order-details">
   <div class="order-totals">
     <div class="product-image">
-      <img src="img/noahkit.png" alt="Oculus Touch">
+      <img src="img/noah2-min.jpg" alt="Oculus Touch">
     </div>
     <div class="order-totals-detail">
       <h2 class="product-title">Noah Kit</h2>
@@ -48,6 +48,25 @@
         </div>
         <div class="col-xs-8">
                72 hours meals ready to eat
+        </div>
+          </div>
+            <hr>
+           
+            <div class="row">
+        <div class="col-xs-4">
+            <img class="imagerounded"  src="img/sac2.png">
+        </div>
+        <div class="col-xs-8">
+              Waterproof & resistant backpack
+        </div>
+          </div>
+            <hr> 
+         <div class="row">
+        <div class="col-xs-4">
+            <img class="imagerounded"  src="img/containerpng.png">
+        </div>
+        <div class="col-xs-8">
+               Container box ready to fit your closet
         </div>
           </div>
             <hr> 
@@ -198,8 +217,14 @@
       <!--  <a href="#" id="place-order" onclick="trackOutboundLinkPlaceorder('Button'); return false;"  class="btn btn-pill btn-primary space-top-none waves-effect waves-light">Place Order</a> -->
   </div><!-- .order-form -->
         </div>
+    
+     
       <div class="containerwhitewebsite fixedfixedwebsite">
-                        <button href=""  class="btn btn-block btn-primary waves-effect waves-light getyours"><span>Get yours</span><i class="material-icons arrow_forward"></i></button>
+          
+                        <button style="width:30%" class="btn btn-default waves-effect waves-light goback"><span>Go Back</span><i class="material-icons arrow_backward"></i></button>
+          
+                        <button  style="width:60%"   class="btn btn-primary waves-effect waves-light getyours"><span>Get yours</span><i class="material-icons arrow_forward"></i></button>
+      
           </div>
 </article><!-- .order-details -->
 
@@ -223,6 +248,8 @@ $( document ).ready(function() {
 	//mixpanel.track("page_load");
      $("#outofstock").hide();
  $("#order-form").hide();
+         $(".goback").hide();
+
      //$(".total-cost").hide();
 
 fbq('track', 'InitiateCheckout');
@@ -236,6 +263,20 @@ fbq('track', 'InitiateCheckout');
         
     });
     
+    $('.goback').click(function(event) {
+        
+        if ($(".getyours span").text()=="Order Now"){
+            $("#order-form").hide();
+            $("#see").show();
+            $(".getyours span").text("Get yours"); 
+            $("#outofstock").hide();
+            $(".goback").hide();
+            $(".order-quantity").show(); 
+            $(".description").show(); 
+        }
+        
+    });
+    
     	$('.getyours').click(function(event) {
             
              if($(".getyours span").text()=="Get yours")
@@ -243,7 +284,8 @@ fbq('track', 'InitiateCheckout');
                  ga('send', 'event', 'Getyourspopup', 'Click', 'Button', { 
        
     });
-              $("#order-form").show();
+              $(".goback").show();
+             $("#order-form").show();
             $("#see").hide();
        
            $(".getyours span").text("Order Now"); 
@@ -252,7 +294,10 @@ fbq('track', 'InitiateCheckout');
              $(".total-cost").show();
          }
          else if ($(".getyours span").text()=="Order Now"){
-            $("#see").hide();
+           
+             $(".goback").hide();
+             $(".getyours").hide();
+             $("#see").hide();
              $(".order-form").hide();
          
                  ga('send', 'event', 'Checkout', 'Click', 'Button', { 

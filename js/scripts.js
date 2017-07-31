@@ -82,6 +82,7 @@ jQuery(document).ready(function($) {
 	toolbarToggle.on('click', function(e) {
 		if($(e.target).is('.active')) {
 			closeToolBox();
+             $('.background').toggle(''); 
 	       	
         } else {
 			closeToolBox();

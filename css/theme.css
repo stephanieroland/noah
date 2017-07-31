@@ -2561,7 +2561,7 @@ input[type="button"].btn-block {
     display: inline-block;
   }
   .site-logo img {
-    max-width: 42px;
+    max-width: 80px;
   }
 }
 
@@ -4646,24 +4646,34 @@ padding:15px;
     bottom: 0;
     right: 0;
     width: 100%;
+background-color: #fff;
+    opacity: 1;
+     text-align:center;
+    vertical-align: center;
+    padding-left:15px;
+     padding-right:15px;
     
 }
+
+
 .fixedfixedwebsite {
     position: fixed;
     bottom: 0;
     right: 0;
  width:45%;
+    height:60px;
+
  
 }
 .containerwhitewebsite {
 
-  
     background-color: #fff;
     opacity: 1;
      text-align:center;
     vertical-align: center;
     padding-left:15px;
      padding-right:15px;
+
 }
 .containerwhite {
 

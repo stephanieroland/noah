@@ -137,23 +137,38 @@ jQuery(document).ready(function($) {
 	$(document).on("click", ".incr-btn", function(e) {
 		var $button = $(this);
 		var oldValue = $button.parent().find('.quantity').val();
-		var price = parseFloat($('.order-totals .price i').text());
-		var totalCostText = $('.order-totals .total-cost i');
+		//var price = parseFloat($('.order-totals .price i').text());
+		var variableprice = parseFloat($('#variable_price').val());
+        var fixedprice = parseFloat($('#fixed_price').val());
+        console.log(fixedprice);
+        
+        var totalCostText = $('.order-totals .total-cost i');
 		var totalCostInput = $('input[name="total_cost"]');
 		$button.parent().find('.incr-btn[data-action="decrease"]').removeClass('inactive');
+        var plus;
 		if ($button.data('action') == "increase") {
-			var newVal = parseFloat(oldValue) + 1;
+            if (oldValue < 5){
+                var newVal = parseFloat(oldValue) + 1;
+        
+            }
+            else{
+                var newVal = oldValue;
+            }
+			
 		} else {
 		 // Don't allow decrementing below 1
 			if (oldValue > 1) {
 				var newVal = parseFloat(oldValue) - 1;
+                plus = -1;
 			} else {
 				newVal = 1;
 				$button.addClass('inactive');
+                plus = 0;
 			}
 		}
 		$button.parent().find('.quantity').val(newVal);
-		var totalCost = parseInt(newVal) * price;
+        
+		var totalCost = parseInt(newVal) * variableprice + fixedprice;
 		totalCost = totalCost.toFixed(2);
 		totalCostText.text(totalCost);
 		totalCostInput.val(totalCost);

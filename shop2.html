@@ -144,10 +144,11 @@ window['_fs_namespace'] = 'FS';
               
               
                 <li><a href="index-m.html#accessories" class="">What's in the kit?</a></li>
+                <li><a href="index-m.html#how" class="">How did we assemble the kit?</a></li>
                     <li><a href="index-m.html#why" class="">Why a disaster kit?</a></li>
                <!-- <li><a href="#video" class="scroll-to">Video Showcase</a></li>
                 <li><a href="#gallery" class="scroll-to">Gallery</a></li> -->
-                 <li>  <a href="shop.html"  class="app-buy">Get Your Kit</a></li>
+                 <li>  <a href="shop2.html"  class="app-buy">Get Your Kit</a></li>
                         <li><a href="index-m.html#contact" class="">Contact</a></li>
               </ul>
             </div>
@@ -167,7 +168,7 @@ window['_fs_namespace'] = 'FS';
     </div>
     <div class="order-totals-detail">
         <h2 class="product-title padding-top-1x padding-bottom-1x">Noah Kit</h2>
-        <p class="description" style="padding: 10px 12% 0 12%">Designed for your household, our kit holds a Go Bag filled with the essentials you need to survive for 72 hours on the move, plus additional food and water for 72 hours of shelter in place survival. Up to a family of 5.
+        <p class="description" style="padding: 0% 0 0%">Designed for your household, our kit holds a Go Bag filled with the essentials you need to survive for 72 hours on the move, plus additional food and water for 72 hours of shelter in place survival.<br>Up to a family of 5.
         </p>
         <input type="hidden" name="product_name" value="Oculus Touch"> 
         <span></span>
@@ -178,55 +179,96 @@ window['_fs_namespace'] = 'FS';
             <a class="incr-btn" data-action="increase" href="#">+</a>
           </div>
             <span class="price"><i>person kit</i></span>
-          <input type="hidden" id="variable_price" name="variable_price" value="45">
-          <input type="hidden" id="fixed_price" name="fixed_price" value="125">
+          <div class="prixvariable"><input type="hidden" id="variable_price" name="variable_price" value="45"></div>
+            <div class="prixfixe"><input type="hidden" id="fixed_price" name="fixed_price" value="125"></div>
         </div>
 
-        <h4 class="total-cost" style="padding: 20px 0 0 0"><span class="text-thin">Total:</span> $<i>215.00</i></h4> 
-        <input type="hidden" id="total_cost" name="total_cost" value="$215.00">
+        <h4 class="total-cost" style="padding: 20px 0 0 0"><span class="text-thin ">Total:</span> $<i class="prixtext"></i></h4> 
+        <div class="prixinput"><input type="hidden" id="total_cost" name="total_cost" value="$215.00"></div>
 
     </div>
   </div>
 
-  <hr>
+
+          
   
     <div id="see" style="text-align: left">
+          <hr>
         <p>
-        See all the items <i class="fa fa-arrows-v" aria-hidden="true"></i></p>
+        See all the items <i class="fa fa-arrow-down" aria-hidden="true"></i></p>
+      
+
         
-             <div class="row">
-        <div class="col-xs-4">
-            <img class="imagerounded"  src="img/sac2.png">
+         <div class="row">
+         
+       
+        
+             <div class="col-xs-4">
+            
+          
+             
+    
+            
+             <a class="lightbox" href="#bag">
+               <img class="imagerounded"   src="img/sac2.png"/>
+            </a> 
+        
+ 
+            
         </div>
         <div class="col-xs-8">
-                   <h3><b>Air Tight Tactical Backpack</b></h3>
-            <h5>(1 / family)</h5>
-          <p>We pack 72 hours of survival supplies, including food and water and all the items listed below, into an air tight tactical backapack. The only items below that do not go in the bag are an additional 72 hours of food and water for sheltering in place.</p>
+            
+                <div class="lightbox-target" id="bag">
+               <img src="img/sac2.png"/>
+               <a class="lightbox-close" href="shop2.html#"></a>
+            </div>
+                   
+            
+           <h3><b>Air Tight Tactical Backpack</b></h3>
+             <h5 class=""><span class="text-thin">Quantity:</span> <i>1</i></h5> 
+          <p>We pack 72 hours of survival supplies, including food and water and all the items listed below, into an air tight tactical backpack. The only items below that do not go in the bag are an additional 72 hours of food and water for sheltering in place.<br>(1 / family)</p>
         </div>
           </div>
+        
         
         <hr>
         
             <div class="row">
         <div class="col-xs-4">
-            <img class="imagerounded"  src="img/water.jpg">
             
+                <a class="lightbox" href="#water">
+            <img class="imagerounded"  src="img/water.jpg">
+            </a>
         </div>
         <div class="col-xs-8">
+               <div class="lightbox-target" id="water">
+               <img src="img/water.jpg"/>
+               <a class="lightbox-close" href="shop2.html#"></a>
+            </div>
                       <h3><b>Drinking Water</b><br></h3>
-            <h5>(1 Serving / Person / 4 Hours)</h5>
-          <p>Packaged water that is shelf stable for 5 years. Each packet of individually sealed water represents one serving.</p>
+            <h5 class="water-quantity"><span class="text-thin">Quantity:</span> <i>36</i></h5> 
+          <p>Packaged water that is shelf stable for 5 years. Each packet of individually sealed water represents one serving.<br>(1 Serving / Person / 4 Hours)</p>
         </div>
           </div>      
         <hr>
+        
+        
                <div class="row">
         <div class="col-xs-4">
+                <a class="lightbox" href="#mre">
             <img class="imagerounded"  src="img/mre.png">
+            </a>
         </div>
         <div class="col-xs-8">
+            <div class="lightbox-target" id="mre">
+               <img src="img/mre.png"/>
+               <a class="lightbox-close" href="shop2.html#"></a>
+            </div>
                       <h3><b>Meals Ready to Eat</b><br></h3>
-            <h5>(1 Serving / Person / 7 Hours)</h5>
-         <p>We include meals that can be consummed with and without hot water. Shelf stable for 5 years. Each meal represents two servings.</p>
+            <h5 class="meal-quantity"><span class="text-thin">Quantity:</span> <i>22</i> + <i>22</i></h5> 
+         <p>We include meals that can be consumed with and without hot water. Shelf stable for 5 years. Each meal represents two servings.<br>
+            (1 Serving / Person / 7 Hours)<br>Your kit also includes
+             additional meals to shelter in place.</p>
         </div>
           </div>
          
@@ -235,46 +277,74 @@ window['_fs_namespace'] = 'FS';
             <hr> 
          <div class="row">
         <div class="col-xs-4">
+                <a class="lightbox" href="#container">
             <img class="imagerounded"  src="img/containerpng.png">
+            </a>
         </div>
         <div class="col-xs-8">
+               <div class="lightbox-target" id="container">
+               <img src="img/containerpng.png"/>
+               <a class="lightbox-close" href="shop2.html#"></a>
+            </div>
              <h3><b>Container box</b><br></h3>
-            <h5>(1 / family)</h5>
-              <p>A Container box ready to fit your closet</p>
+           <h5 class=""><span class="text-thin">Quantity:</span> <i>1</i></h5> 
+              <p>A Container box ready to fit your closet. <br>
+            (1 / family)</p>
         </div>
           </div>
             <hr> 
+        
                <div class="row">
         <div class="col-xs-4">
+                <a class="lightbox" href="#firstaid">
             <img class="imagerounded"  src="img/firsaid2.png">
+            </a>
         </div>
         <div class="col-xs-8">
+               <div class="lightbox-target" id="firstaid">
+               <img src="img/firsaid2.png"/>
+               <a class="lightbox-close" href="shop2.html#"></a>
+            </div>
               <h3><b>First-Aid Kit</b></h3>
-            <h5>(1 / family)</h5>
-        <p>Approved by the United States Coast Guard, the first-aid kit included in the Noah Kit Go Bag is the top of the line and includes bandages and soutures required to mend basic wounds.</p>
+            <h5 class=""><span class="text-thin">Quantity:</span> <i>1</i></h5> 
+        <p>Approved by the United States Coast Guard, the first-aid kit included in the Noah Kit Go Bag is the top of the line and includes bandages and soutures required to mend basic wounds.<br>(1 / family)</p>
         </div>
           </div>
              <hr>
+        
                <div class="row">
         <div class="col-xs-4">
+                <a class="lightbox" href="#blanket">
             <img class="imagerounded"  src="img/blanket - Copie.jpg">
+            </a>
         </div>
         <div class="col-xs-8">
+               <div class="lightbox-target" id="blanket">
+               <img src="img/blanket%20-%20Copie.jpg"/>
+               <a class="lightbox-close" href="shop2.html#"></a>
+            </div>
            <h3><b>Emergency Blanket</b></h3>
-           <h5>(1 / person)</h5> 
-        <p>Lightweight and easily folded for ease of storage and transport, emergency blankets break wind, keep people dry and and provide insulation that will keep people sufficiently warm even in below freezing temperatures.</p>
+           <h5 class="blanket-quantity"><span class="text-thin">Quantity:</span> <i>2</i></h5> 
+        <p>Lightweight and easily folded for ease of storage and transport, emergency blankets break wind, keep people dry and and provide insulation that will keep people sufficiently warm even in below freezing temperatures.<br>(1 / person)</p>
         </div>
           </div>
              <hr>
         
                   <div class="row">
         <div class="col-xs-4">
+                <a class="lightbox" href="#radio">
             <img class="imagerounded"  src="img/radio - Copie.jpg">
+            </a>
         </div>
         <div class="col-xs-8">
+               <div class="lightbox-target" id="radio">
+               <img src="img/radio%20-%20Copie.jpg"/>
+               <a class="lightbox-close" href="shop2.html#"></a>
+            </div>
            <h3><b>Emergency Radio & Power Station</b></h3>
-            <h5>(1 / family)</h5>
-        <p>A source of power in a disaster scenario must be able to function in all conditions and at night. This station works on a hand crank (rather than solar).</p>
+          <h5 class=""><span class="text-thin">Quantity:</span> <i>1</i></h5> 
+        <p>A source of power in a disaster scenario must be able to function in all conditions and at night. This station works on a hand crank (rather than solar).<br>
+            (1 / family)</p>
       
         </div>
           </div>
@@ -282,48 +352,78 @@ window['_fs_namespace'] = 'FS';
         
                <div class="row">
         <div class="col-xs-4">
+                <a class="lightbox" href="#pills">
             <img class="imagerounded"  src="img/pills.png">
+            </a>
         </div>
           <div class="col-xs-8">
+                 <div class="lightbox-target" id="pills">
+               <img src="img/pills.png"/>
+               <a class="lightbox-close" href="shop2.html#"></a>
+            </div>
             <h3><b>Potassium Iodine tablets </b></h3>
-              <h5>(1 / Person / 24 Hours)</h5>
-            <p> Potassium Iodine tablets (KI) to prevent any thyroid damage caused by nuclear radiation.</p>
+              <h5 class="iodine-quantity"><span class="text-thin">Quantity:</span> <i>6</i></h5> 
+            <p> Potassium Iodine tablets (KI) to prevent any thyroid damage caused by nuclear radiation.<br>
+              (1 / Person / 24 Hours)</p>
         </div>
           </div>
              <hr>
+        
                <div class="row">
         <div class="col-xs-4">
+                <a class="lightbox" href="#fire">
             <img class="imagerounded"  src="img/firestarter - Copie.jpg">
+            </a>
         </div>
         <div class="col-xs-8">
+               <div class="lightbox-target" id="fire">
+               <img src="img/firestarter%20-%20Copie.jpg"/>
+               <a class="lightbox-close" href="shop2.html#"></a>
+            </div>
             <h3><b>Fire Starting Kit</b></h3>
-            <h5>(1 / family)</h5>
-        <p>Small but effective. Rubbing the stick against the metallic edge creates sparks for starting fires.</p>
+          <h5 class=""><span class="text-thin">Quantity:</span> <i>1</i></h5> 
+        <p>Small but effective. Rubbing the stick against the metallic edge creates sparks for starting fires.<br>
+            (1 / family)</p>
      
         </div>
           </div>
              <hr>
+        
                <div class="row">
         <div class="col-xs-4">
+                <a class="lightbox" href="#knife">
             <img class="imagerounded"  src="img/leatherman - Copie.jpg">
+            </a>
         </div>
         <div class="col-xs-8">
-           
+              <div class="lightbox-target" id="knife">
+               <img src="img/leatherman%20-%20Copie.jpg"/>
+               <a class="lightbox-close" href="shop2.html#"></a>
+            </div>
         <h3><b>Multi-tool Knife</b></h3>
-            <h5>(1/ family)</h5>
-        <p>We ship the classic Leatherman as part of the Noah Kit. It is reliable and effective and has the appropriate variety of tools.</p>
+            <h5 class=""><span class="text-thin">Quantity:</span> <i>1</i></h5> 
+        <p>We ship the classic Leatherman as part of the Noah Kit. It is reliable and effective and has the appropriate variety of tools.<br>
+            (1/ family)</p>
      
         </div>
           </div>
              <hr>
+        
                <div class="row">
         <div class="col-xs-4">
+                <a class="lightbox" href="#lamp">
             <img class="imagerounded"  src="img/flashlight - Copie.jpg">
+            </a>
         </div>
         <div class="col-xs-8">
+               <div class="lightbox-target" id="lamp">
+               <img src="img/flashlight%20-%20Copie.jpg"/>
+               <a class="lightbox-close" href="shop2.html#"></a>
+            </div>
             <h3><b>Flashlight</b></h3>
-            <h5>(1 / Person)</h5>
-        <p> 25 meters range and three brightness levels. Rechargeable battery lasts 50 hours per charge. Heavy duty casing to ensure durability.</p>
+           <h5 class="blanket-quantity"><span class="text-thin">Quantity:</span> <i>1</i></h5> 
+        <p> 25 meters range and three brightness levels. Rechargeable battery lasts 50 hours per charge. Heavy duty casing to ensure durability.<br>
+            (1 / Person)</p>
       
         </div>
           </div>
@@ -335,11 +435,11 @@ window['_fs_namespace'] = 'FS';
         <h2 class="block-title text-center">
          ALSO INCLUDED IN KIT
         </h2>
-        <h5>1 x Duct Tape</h5>
-        <h5>1 x 12 Foot Rop</h5>
+        <h5><i>1</i> x Duct Tape </h5><p>(1/family)</p>
+          <h5><i>1</i> x 12 Foot Rope</h5> <p> (1/family)</p> 
         
-        <h5>24 x Water Purification Tablets</h5>
-        <h5>1 x Emergency Whistle</h5>
+       <h5 class="purification-quantity"><i>12</i> x Water Purification Tablets</h5><p> (1 tablet purifies 1L water)</p>
+        <h5><i>1</i> x Emergency Whistle</h5><p> (1/family)</p>
       </div>
     </div>
         
@@ -396,12 +496,38 @@ window['_fs_namespace'] = 'FS';
       <!--  <a href="#" id="place-order" onclick="trackOutboundLinkPlaceorder('Button'); return false;"  class="btn btn-pill btn-primary space-top-none waves-effect waves-light">Place Order</a> -->
   </div><!-- .order-form -->
      
+          
+<div  id="info-form" class="order-form">
+    <h3> Not sure you wanna buy now?</h3 >
+   <p> Leave us your email to receive a reminder about the disaster kit.</p>
+    <div class="row">
+     
+      <div class="col-sm-6">
+        <div class="form-element">
+          <input type="text" class="form-control" id="sendemail" name="sendemail" placeholder="Email" required>
+        </div>
+      </div>
+    </div><!-- .row -->
+
+      <!-- <div class="form-element form-select">
+          <select id="premium" class="form-control" name="premium">
+            <option value="0">Want to add the 3 premium connectivity items?</option>
+            <option value="100">Yes (+ $100)</option>
+            <option value="0">No (+ $0)</option>
+         
+          </select>
+        </div> -->
+    <!--<button class="btn btn-pill btn-primary space-top-none waves-effect waves-light">Place Order</button> -->
+      <!--  <a href="#" id="place-order" onclick="trackOutboundLinkPlaceorder('Button'); return false;"  class="btn btn-pill btn-primary space-top-none waves-effect waves-light">Place Order</a> -->
+  </div><!-- .order-form -->      
    
              <div class="fixedfixed">
           
-                        <button style="width:30%" class="btn btn-default waves-effect waves-light goback"><span>Go Back</span><i class="material-icons arrow_backward"></i></button>
-          
-                        <button  style="width:60%; font-style: normal"   class="btn btn-primary waves-effect waves-light getyours"><span>ADD TO CART</span></button>
+                        <button style="width:30%" class="btn btn-default waves-effect waves-light goback"><span>Go Back</span></button>
+                 <button style="width:60%" class="btn btn-default waves-effect waves-light remindme"><span>Remind me later </span><i class="fa fa-clock-o" aria-hidden="true"></i></button> 
+           
+                        <button  style="width:30%; font-style: normal"   class="btn btn-primary waves-effect waves-light getyours"><span>BUY </span><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                   <button  style="width:60%; font-style: normal"   class="btn btn-primary waves-effect waves-light send"><span>SEND</span></button>
       
           </div>
    
@@ -415,6 +541,15 @@ window['_fs_namespace'] = 'FS';
                                      <p class="text-danger"><strong>We apologize for this inconvenience.</strong> <br>
                                          We will let you know as soon as we have supply.</p>
     </div>
+          
+           <div id="email-sent">
+    <h2 class="block-title padding-top-2x space-bottom-1x">
+                                         Thank you!
+                                    </h2>
+                                     <p class="text-success"><strong>We received successfully your email address.</strong> <br>
+                                         You'll receive a reminder email within a month.</p>
+    </div>
+          
      </div>
       </section>
   </div><!-- .page-wrapper -->
@@ -431,6 +566,7 @@ window['_fs_namespace'] = 'FS';
   <script src="js/vendor/owl.carousel.min.js"></script>
   <script src="js/vendor/magnific-popup.min.js"></script>
   <script src="js/scripts.js"></script>
+        <script type="text/javascript" src="js/abalytics.js"></script> <!-- ab testing script -->
     <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -441,21 +577,78 @@ window['_fs_namespace'] = 'FS';
   ga('send', 'pageview');
 
 </script>
+ 
     
 
 <script>
+    
+// Initialize GA or UA trackers and variants
+
+      ABalytics.init({
+              experiment1_name: [
+                {
+                  name: 'prixbas',
+                  "prixtext": "180.00",
+                    "prixinput": "<input type='hidden' id='total_cost' name='total_cost' value='$172.00'>",
+                    "prixvariable": "<input type='hidden' id='variable_price' name='variable_price' value='36'>",
+                   "prixfixe": "<input type='hidden' id='fixed_price' name='fixed_price' value='100'>"
+                },
+                {
+                  name: 'prixmiddle',
+                  "prixtext": "216.00",
+                   "prixinput": "<input type='hidden' id='total_cost' name='total_cost' value='$215.00'>",
+                     "prixvariable": "<input type='hidden' id='variable_price' name='variable_price' value='45'>",
+                     "prixfixe": "<input type='hidden' id='fixed_price' name='fixed_price' value='125'>"
+                },
+                   {
+                  name: 'prixhaut',
+                  "prixtext": "320.00",
+                   "prixinput": "<input type='hidden' id='total_cost' name='total_cost' value='$301.00'>",
+                        "prixvariable": "<input type='hidden' id='variable_price' name='variable_price' value='63'>",
+                        "prixfixe": "<input type='hidden' id='fixed_price' name='fixed_price' value='175'>"
+                }
+              ]
+          
+            });
+
+// Send pageview tracking call    
+    </script>
+    
+<script type="text/javascript">
+    // initialiser le AB testing
+  window.onload = function() {
+    ABalytics.applyHtml();
+  };
 
 // add them to the *validation section*.
 
 var mixpanel_id = "158372b25c89c6c5da1c323d3ad392d5";
 
+    
+// (in jQuery)
+$('.lightbox-close').on('click', function(e) {
+  // find current scroll position
+  var pos = document.body.scrollTop || document.documentElement.scrollTop;
+
+  // let normal action propagate etc
+
+  // in the next available frame (async, hence setTimeout), reset scroll posiion
+  setTimeout(function() {
+    window.scrollTo(0, pos);
+  }, 1);
+})    
+    
+    
+ 
 
 $( document ).ready(function() {
 	//mixpanel.track("page_load");
      $("#outofstock").hide();
  $("#order-form").hide();
-        
+   $("#info-form").hide();      
          $(".goback").hide();
+     $(".send").hide();
+       $("#email-sent").hide();
 
      //$(".total-cost").hide();
 
@@ -464,10 +657,24 @@ fbq('track', 'InitiateCheckout');
     
     $('.goback').click(function(event) {
         
-        if ($(".getyours span").text()=="Order Now"){
+        if ($(".getyours span").text()=="Order"){
             $("#order-form").hide();
+             $(".remindme").show();
             $("#see").show();
-            $(".getyours span").text("ADD TO CART"); 
+            $(".getyours span").text("BUY "); 
+            $("#outofstock").hide();
+            $(".goback").hide();
+            $(".order-quantity").show(); 
+            $(".description").show(); 
+        }
+        
+          else if ($(".send span").text()=="SEND"){
+            $("#info-form").hide();
+             $(".remindme").show();
+            $("#see").show();
+               $(".send").hide();
+               $(".getyours").show(); 
+            $(".getyours span").text("BUY "); 
             $("#outofstock").hide();
             $(".goback").hide();
             $(".order-quantity").show(); 
@@ -476,24 +683,87 @@ fbq('track', 'InitiateCheckout');
         
     });
     
+     $('.send').click(function(event) {
+            $(".send").hide();
+          $(".goback").hide();
+          $("#info-form").hide();
+         $("#email-sent").show();
+          ga('send', 'event', 'sendemail', 'Click', 'Button', { 
+       
+    });  
+         
+          var sendemail = $('#sendemail').val()
+            
+  
+
+                if (validateForm(sendemail)){
+                    var distinctId = mixpanel.get_distinct_id()
+                    mixpanel.identify(distinctId)
+                    // Set user attributes for mixpanel DB
+                    var response = mixpanel.people.set({
+                    "$email":sendemail,
+             
+              //  "$product-recovery":$('#recovery').is(':checked').toString(),
+                //"$product-hydrate":$('#hydrate').is(':checked').toString(),
+                //"$product-boosters":$('#boosters').is(':checked').toString(),
+                //"$product-dna":$('#dna').is(':checked').toString()
+                });
+
+
+               // mixpanel.track('order');
+                //	fbq('track', 'AddToCart', {
+                //		value: 199,
+                //		currency: 'USD'
+                //	});
+
+                } else {
+                    return false
+                }
+        
+         
+     });
+    
+       $('.remindme').click(function(event) {
+        
+    
+            $("#order-form").hide();
+             $(".remindme").hide();
+            $("#see").hide();
+            $(".getyours").hide(); 
+            $("#info-form").show();
+            $(".goback").show();
+            $(".order-quantity").hide(); 
+            $(".description").hide(); 
+            $(".send").show(); 
+           
+            ga('send', 'event', 'remindme', 'Click', 'Button', { 
+       
+    });  
+           
+                     
+        
+    });
+    
     	$('.getyours').click(function(event) {
             
-             if($(".getyours span").text()=="ADD TO CART")
+             if($(".getyours span").text()=="BUY ")
          {
                  ga('send', 'event', 'Getyourspopup', 'Click', 'Button', { 
        
-    });
+    });         
+             $(".remindme").hide();
+            
               $(".goback").show();
              $("#order-form").show();
             $("#see").hide();
              console.log("coucou");
        
-           $(".getyours span").text("Order Now"); 
+           $(".getyours span").text("Order"); 
             $(".order-quantity").hide(); 
               $(".description").hide(); 
              $(".total-cost").show();
          }
-         else if ($(".getyours span").text()=="Order Now"){
+         else if ($(".getyours span").text()=="Order"){
            
              $(".goback").hide();
              $(".getyours").hide();

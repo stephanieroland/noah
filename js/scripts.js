@@ -82,12 +82,12 @@ jQuery(document).ready(function($) {
 	toolbarToggle.on('click', function(e) {
 		if($(e.target).is('.active')) {
 			closeToolBox();
-             $('.background').toggle(''); 
+            // $('.background').toggle(''); 
 	       	
         } else {
 			closeToolBox();
 			$(this).addClass('active');
-            $('.background').toggle(''); 
+           // $('.background').toggle(''); 
 		}
     
 	});
@@ -95,7 +95,7 @@ jQuery(document).ready(function($) {
     var background = $('.background');
 	background.on('click', function(e) {
         closeToolBox();
-         $('.background').toggle(''); 
+       //  $('.background').toggle(''); 
     });
     	
       
@@ -144,6 +144,11 @@ jQuery(document).ready(function($) {
         console.log(fixedprice);
         
         var totalCostText = $('.order-totals .total-cost i');
+        var quantitywater = $('.water-quantity i');
+        var quantitymeal = $('.meal-quantity i');
+         var quantityblanket = $('.blanket-quantity i');
+         var quantityiodine = $('.iodine-quantity i');
+         var quantitypurification = $('.purification-quantity i');
 		var totalCostInput = $('input[name="total_cost"]');
 		$button.parent().find('.incr-btn[data-action="decrease"]').removeClass('inactive');
         var plus;
@@ -172,6 +177,11 @@ jQuery(document).ready(function($) {
 		var totalCost = parseInt(newVal) * variableprice + fixedprice;
 		totalCost = totalCost.toFixed(2);
 		totalCostText.text(totalCost);
+        quantitywater.text(parseInt(newVal)*18);
+        quantitymeal.text(parseInt(newVal)*11);
+        quantityblanket.text(parseInt(newVal));
+        quantityiodine.text(parseInt(newVal)*3);
+          quantitypurification.text(parseInt(newVal)*6);
 		totalCostInput.val(totalCost);
         
 		e.preventDefault();
